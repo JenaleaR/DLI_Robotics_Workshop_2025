@@ -4,7 +4,7 @@
 > **Where:** Kigali, Rwanda (Deep Learning Indaba)
 > **Note:** Attendance is limited to registered DLI participants.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JenaleaR/DLI_Robotics_Workshop_2025/blob/main/Introduction_to_Human_Pose_Estimation_for_Robotics_.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JpIDhhMHealeajrV5Ul3Am7V0RtgWMrK?usp=sharing)
 
 ---
 
@@ -17,7 +17,7 @@ We’re back for the **3rd Workshop on Robotics & Automation in Africa**, a fast
 ## 🧭 Quick links
 
 * 🏠 Workshop site (schedule, speakers, logistics): [Workshop Website](https://sites.google.com/view/robot-learning-for-africa-2025/home)
-* 📓 **Open the tutorial notebook in Colab:**  → [**Launch on Colab** ⬆️](https://colab.research.google.com/github/JenaleaR/DLI_Robotics_Workshop_2025/blob/main/Introduction_to_Human_Pose_Estimation_for_Robotics_.ipynb)
+* 📓 **Open the tutorial notebook in Colab:**  → [**Launch on Colab** ⬆️](https://colab.research.google.com/drive/1JpIDhhMHealeajrV5Ul3Am7V0RtgWMrK?usp=sharing)
 * 💾 Deep Learning Indaba 2025: [Website](https://deeplearningindaba.com/2025/)
 
 ---
@@ -27,42 +27,19 @@ We’re back for the **3rd Workshop on Robotics & Automation in Africa**, a fast
 ### Pose estimation fundamentals
 
 * 🧩 What keypoints, skeletons, and confidence scores mean in practice
-* ⚖️ Accuracy vs. latency trade-offs for lightweight vs. high-capacity models
-* 👥 Single-person vs. multi-person detection basics and common failure modes (occlusion, truncation)
+* 👥 Single-person detection basics 
 * 📈 How to think about simple quality checks (e.g., % of keypoints detected, stability over time)
 
 ### Hands-on in Colab
 
-* ⚙️ Environment setup, GPU runtime selection, and troubleshooting in Colab
-* 🖼️ Running inference on images/video and overlaying skeletons & bounding boxes
-* 🧵 Temporal smoothing (e.g., basic EMA) to reduce jitter in live streams
-* 🗃️ Exporting results (CSV/JSON) for downstream use or analysis
+* ⚙️ Environment setup and troubleshooting in Colab
+* 🖼️ Running inference on images/video and overlaying skeletons 
+* 🧵 Robot decision-making
 
 ### From pixels to robot-useful signals
 
 * 🎛️ Mapping keypoints to interpretable features (angles, distances, simple poses)
-* 🚦 Thresholding, debouncing, and rate-limiting to make signals actionable & safe
 * 🔁 A tiny state-machine pattern: “if gesture → do behavior,” with guard rails
-* 🔌 How to pass keypoints to other systems (e.g., ROS/web apps) via file or sockets
-
-### Human–Robot Interaction (HRI) considerations
-
-* 🙋 Gesture sets you can prototype quickly (wave, point, hands-up, attention)
-* 🌍 Cultural context & robustness: why norms matter (ties into the Pepper demo)
-* 🔒 Privacy, consent, and respectful data handling in interactive sessions
-
-### Performance & debugging
-
-* ⏱️ Measuring throughput/FPS and spotting bottlenecks
-* 🐞 Diagnosing false positives/negatives; quick fixes for lighting, scale, and motion blur
-* 🧪 Creating tiny test clips to reproduce and compare behaviors consistently
-
-### (Optional) Stretch ideas
-
-* 🧭 Coordinate frames & basic scaling (pixel distances → approximate real-world cues)
-* 🧰 Where to go next: multi-view setups, 3D pose, and better temporal models
-
----
 
 ## ▶️ How to use this repo
 
